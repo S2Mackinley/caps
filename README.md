@@ -65,3 +65,24 @@ to run type: `node caps.js`
 Today, we begin the first of a 4-Phase build of the CAPS system, written in Node.js. In this first phase, our goal is to setup a system of events and handlers, with the intent being to change out the eventing system as we go, but keeping the handlers themselves largely the same. The task of “delivering a package” doesn’t change (the handler), even if the mechanism for triggering that task (the event) does.
 
 ---
+
+```
+Driver: in-transit bdeb796a-c688-485e-b357-0fdf28654deb
+Event: {
+  event: 'delivered',
+  time: 2021-05-04T01:30:39.159Z,
+  payload: {
+    StoreName: 'Ugly Sweaters',
+    Name: "Toni O'Conner",
+    OrderId: 'bdeb796a-c688-485e-b357-0fdf28654deb',
+    Address: '3957 Skyla Divide',
+    City: 'Modestobury',
+    ZipCode: '99925-9768',
+    Phone: '576-507-6374',
+    Card: '4274002346768',
+    CVV: '660',
+    Price: '$239.10',
+    DriverListeningTo: 'Rock'
+  }
+}
+```
