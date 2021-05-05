@@ -1,6 +1,6 @@
 # ![cf](https://i.imgur.com/7v5ASc8.png) Lab 12: FOOD DELIVERY|Socket.IO
 
-![workflow](/actions/workflows/node.js.yml/badge.svg)
+![workflow](https://github.com/S2Mackinley/caps/tree/main/socket.io/actions/workflows/node.js.yml/badge.svg)
 
 
 
