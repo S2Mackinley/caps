@@ -16,11 +16,16 @@ vendor.on('connection', socket => {
   socket.on('delivered', payload => {
     let id = uuid();
     queue.messages[id] = payload;
-    console.log('current message queue', queue);
+
+    console.log('message queue', queue);
+
     vendor.emit('delivered', {id, payload});
   });
 
   socket.on('getAll', () => {
+
+    console.log('|||GET ALL MESSAGES|||');
+
     Object.keys(queue).forEach(id => {
       vendor.emit('message:', { id, payload: queue.messages[id] })
     })
@@ -28,7 +33,9 @@ vendor.on('connection', socket => {
 
   socket.on('received', message => {
     delete queue.messages[message.id];
+
     console.log('message deleted');
+    
   });
 
 })
